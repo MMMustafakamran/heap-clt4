@@ -1,0 +1,9 @@
+{
+ "text": "So this is the problem, umm, the runtime only registers a built-in OpenAI agent, there's no Claude agent anywhere on the page.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 9.334,
+ "file": "8514347227542583fd13f7f78a8d82a7.mp3",
+ "clip": "CLAUDESDKTS-rn-01-Quickstart",
+ "at": "evidence"
+}

@@ -7,7 +7,7 @@
   },
   {
    "at": "evidence",
-   "text": "So this is the problem, the server calls this run shared state function, but umm, the page never shows it."
+   "text": "So this is the problem, the route calls this run agentic loop function, but umm, the page never shows it."
   },
   {
    "at": "ide",
@@ -19,11 +19,11 @@
   },
   {
    "at": "demo",
-   "text": "Moving on to the demo. The notes card should update from the agent, and it only works on the loop I wrote."
+   "text": "Moving on to the demo. The notes card updates from the agent, but only because it's running on the loop I wrote."
   },
   {
    "at": "notepad",
-   "text": "So basically, the agent is three fragments of a loop that's never shown, with undefined helpers and no install, so you can't run it as written."
+   "text": "So basically, the agent is just pieces of a loop that's never shown, the runner and the tool executor are missing, so you can't run it as written."
   },
   {
    "at": "+",

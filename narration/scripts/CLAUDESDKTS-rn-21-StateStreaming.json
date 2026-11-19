@@ -1,0 +1,33 @@
+{
+ "clip": "CLAUDESDKTS-rn-21-StateStreaming",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the state streaming page for Claude Agent SDK TypeScript on React Native, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, the page shows one branch that runs inside a handler, uh, and the handler itself is never shown."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "+",
+   "text": "This part wasn't on the page, I had to add it myself, the streaming handler and the route."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. The document streams in, but only on the handler I wrote."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the handler, the route and the write document tool are missing, and there's a second helper doing the same thing with no word on which to use."
+  },
+  {
+   "at": "+",
+   "text": "That's what's breaking here, kindly have it fixed."
+  }
+ ]
+}

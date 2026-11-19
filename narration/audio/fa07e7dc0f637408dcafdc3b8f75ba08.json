@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the panel wants status and progress fields, but the agent on the page only writes notes, so nothing can move the panel.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 11.424,
+ "file": "fa07e7dc0f637408dcafdc3b8f75ba08.mp3",
+ "clip": "CLAUDESDKTS-rn-20-StateRendering",
+ "at": "notepad"
+}

@@ -1,0 +1,9 @@
+{
+ "text": "So basically, this should give you a chat on a Claude agent, but you get OpenAI, and the page never shows the Claude backend or how to connect it.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 9.706,
+ "file": "9247757da569bab51dce49bf45f1e04a.mp3",
+ "clip": "CLAUDESDKTS-rn-01-Quickstart",
+ "at": "notepad"
+}

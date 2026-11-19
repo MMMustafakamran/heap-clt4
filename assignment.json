@@ -95,7 +95,8 @@
       "status": "❌",
       "findings": [
         1,
-        2
+        2,
+        21
       ],
       "block": null,
       "review": {
@@ -106,7 +107,7 @@
       "added": "2026-11-20",
       "probe": null,
       "notes": [
-        "Issue: no Claude agent, only a built-in OpenAI one."
+        "Issue: the quickstart only registers a built-in OpenAI agent, no Claude agent is connected."
       ],
       "links": [
         {
@@ -126,7 +127,7 @@
       "child": true,
       "docPath": "prebuilt-components",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [
         3,
         4
@@ -139,7 +140,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Note: the page lists the chat's peer packages but gives no install command."
+      ],
       "links": [
         {
           "text": null,
@@ -158,7 +161,7 @@
       "child": true,
       "docPath": "custom-look-and-feel/markdown",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [
         3,
         4
@@ -171,7 +174,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Note: the page lists the needed packages but gives no install command."
+      ],
       "links": [
         {
           "text": null,
@@ -190,7 +195,7 @@
       "child": true,
       "docPath": "custom-look-and-feel/headless-ui",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [],
       "block": null,
       "review": {
@@ -219,8 +224,11 @@
       "child": true,
       "docPath": "multimodal-attachments",
       "reachable": "sidebar",
-      "status": "",
-      "findings": [],
+      "status": "❌",
+      "findings": [
+        22,
+        5
+      ],
       "review": {
         "verdict": null,
         "approvedAt": null,
@@ -228,7 +236,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Issue: tapping Send in the page's composer does nothing, the prompt stays in the input."
+      ],
       "links": [],
       "block": null
     },
@@ -240,7 +250,7 @@
       "child": false,
       "docPath": "frontend-tools",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [
         3
       ],
@@ -252,7 +262,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Note: the page lists the needed packages but gives no install command."
+      ],
       "links": [
         {
           "text": null,
@@ -294,7 +306,7 @@
       "child": true,
       "docPath": "generative-ui/tool-based",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [
         3
       ],
@@ -306,7 +318,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Note: the page lists the needed packages but gives no install command."
+      ],
       "links": [
         {
           "text": null,
@@ -325,8 +339,9 @@
       "child": true,
       "docPath": "generative-ui/tool-rendering",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [
+        8,
         3
       ],
       "block": null,
@@ -337,7 +352,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Note: the agent's helpers are never defined on the page, filled in by hand."
+      ],
       "links": [
         {
           "text": "Issue",
@@ -356,8 +373,10 @@
       "child": false,
       "docPath": "shared-state",
       "reachable": "sidebar",
-      "status": "",
-      "findings": [],
+      "status": "❌",
+      "findings": [
+        9
+      ],
       "block": null,
       "review": {
         "verdict": null,
@@ -366,7 +385,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Issue: the TS agent is fragments, runAgenticLoop and its runner and tool executor are never shown."
+      ],
       "links": [
         {
           "text": "Issue",
@@ -385,7 +406,7 @@
       "child": true,
       "docPath": "shared-state/rendering-in-app",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [
         3
       ],
@@ -396,7 +417,7 @@
         "by": null
       },
       "added": "2026-11-20",
-      "probe": null,
+      "probe": "ci 44625416190 1/1",
       "notes": [],
       "links": []
     },
@@ -408,7 +429,7 @@
       "child": true,
       "docPath": "shared-state/agent-readonly",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [],
       "block": null,
       "review": {
@@ -437,7 +458,7 @@
       "child": false,
       "docPath": "human-in-the-loop",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [],
       "block": null,
       "review": {
@@ -466,7 +487,7 @@
       "child": true,
       "docPath": "human-in-the-loop/useInterrupt",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [],
       "block": null,
       "review": {
@@ -495,7 +516,7 @@
       "child": true,
       "docPath": "human-in-the-loop/headless",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [
         13
       ],
@@ -507,7 +528,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Note: ./src/ChatScreen is imported but never shown."
+      ],
       "links": [
         {
           "text": null,
@@ -526,7 +549,7 @@
       "child": true,
       "docPath": "human-in-the-loop/governed-actions",
       "reachable": "sidebar",
-      "status": "",
+      "status": "✅",
       "findings": [],
       "block": null,
       "review": {
@@ -580,8 +603,10 @@
       "child": false,
       "docPath": "multi-agent/subagents",
       "reachable": "sidebar",
-      "status": "",
-      "findings": [],
+      "status": "❌",
+      "findings": [
+        16
+      ],
       "block": null,
       "review": {
         "verdict": null,
@@ -590,7 +615,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Issue: no run loop that calls the sub-agents and no React Native code for the delegation log."
+      ],
       "links": [
         {
           "text": "Issue",
@@ -633,8 +660,10 @@
       "docPath": "generative-ui/state-rendering",
       "reachable": "sidebar",
       "linkedFrom": "generative-ui",
-      "status": "",
-      "findings": [],
+      "status": "❌",
+      "findings": [
+        17
+      ],
       "block": null,
       "review": {
         "verdict": null,
@@ -643,7 +672,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Issue: the panel reads progress state from a \"researcher\" agent the page never builds, so it stays idle."
+      ],
       "links": [
         {
           "text": "Issue",
@@ -663,8 +694,10 @@
       "docPath": "shared-state/streaming",
       "reachable": "sidebar",
       "linkedFrom": "shared-state, shared-state/rendering-in-app, shared-state/agent-readonly, multi-agent/subagents",
-      "status": "",
-      "findings": [],
+      "status": "❌",
+      "findings": [
+        18
+      ],
       "block": null,
       "review": {
         "verdict": null,
@@ -673,7 +706,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Issue: only one branch of the streaming handler is shown, the handler, route and write_document tool are missing."
+      ],
       "links": [
         {
           "text": "Issue",
@@ -693,7 +728,7 @@
       "docPath": "programmatic-control",
       "reachable": "in-content",
       "linkedFrom": "custom-look-and-feel/headless-ui, shared-state",
-      "status": "",
+      "status": "✅",
       "findings": [],
       "block": null,
       "review": {
@@ -723,8 +758,10 @@
       "docPath": "agent-config",
       "reachable": "in-content",
       "linkedFrom": "inspector",
-      "status": "",
-      "findings": [],
+      "status": "❌",
+      "findings": [
+        20
+      ],
       "block": null,
       "review": {
         "verdict": null,
@@ -733,7 +770,9 @@
       },
       "added": "2026-11-20",
       "probe": null,
-      "notes": [],
+      "notes": [
+        "Issue: no React Native frontend for the config and three different config channels named."
+      ],
       "links": [
         {
           "text": "Issue",

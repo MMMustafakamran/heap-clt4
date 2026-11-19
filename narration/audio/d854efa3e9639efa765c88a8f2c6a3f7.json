@@ -1,0 +1,9 @@
+{
+ "text": "So this is the problem, the page shows one branch that runs inside a handler, uh, and the handler itself is never shown.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 8.452,
+ "file": "d854efa3e9639efa765c88a8f2c6a3f7.mp3",
+ "clip": "CLAUDESDKTS-rn-21-StateStreaming",
+ "at": "evidence"
+}

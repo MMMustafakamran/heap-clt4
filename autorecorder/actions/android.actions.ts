@@ -23,37 +23,36 @@ import {
 } from './adb';
 
 /** Finding clips (❌/⚠️, level 1): doc highlight before the IDE, Notepad after the demo. Filled per page.
- *  DRAFT 2026-11-19: written from the doc text only, no probe yet (no Anthropic credit). Recheck after probing. */
+ *  Probe-confirmed in CI run 44622497317 (2026-11-19). Evidence texts checked on the rendered page. */
 export const FINDING_NOTES: Record<string, string> = {
-  quickstart: `this is the claude agent sdk react native quickstart,should give u a chat running on a claude agent
+  quickstart: `this is the claude agent sdk typescript react native quickstart,should give u a chat running on a claude agent
 but the runtime only registers a built in openai agent, model openai gpt 6 luna
 so the chat answers but its not claude at all
-no pip install for ag-ui claude sdk,no python server,nothing that hooks claude into the runtime
-had to guess the claude adapter backend and an httpagent from ag-ui client myself`,
-  'tool-rendering': `page says the agent runs get_weather and the weather card renders in the chat
-but the agent is just two pieces of a claude agent sdk adapter file plus the weather tool
-it uses normalizeclaudeagentsdkmodel, zodshapefromjsonschema, emit, executetool,none defined anywhere,no imports
-and no route or server that runs the adapter
-had to write the helpers and the wiring myself`,
+no npm install for ag-ui claude agent sdk,no agent server,nothing that hooks claude into the runtime
+had to take the claude adapter server from the web quickstart and wire an httpagent myself`,
+  'multimodal-attachments': `page says type a question and tap send,message goes out and the agent answers
+but tapping send does nothing,the text just stays in the input
+no message,no reply,no error either
+tried it twice same thing,so u cant send anything with the composer from the page`,
   'shared-state': `page says the agent reads and writes notes and preferences shared with the app
-but the agent code is just chunks of a showcase agent_server and adapter file
-runagenticloop, runwithclaudeagentsdk, executebackendtool, zodshapefromjsonschema all never defined,no imports
-and the messages api fallback it mentions isnt shown either,cant run it as written
-wrote the whole loop myself`,
+but the typescript agent is just chunks of agent_server and the adapter file
+the route calls runagenticloop,which needs runwithclaudeagentsdk and executebackendtool,none of them shown
+the messages api fallback it mentions isnt there either,so u cant run it as written
+wrote the whole loop myself,then the notes card updates`,
   subagents: `page says the delegation log renders live as the supervisor calls sub agents
 but theres no react native code for the log, just one sentence
-and the run loop that calls the sub agents and writes delegations is never shown,only prompts and tool schemas
-wrote both the loop and the log myself`,
+and the loop that calls the sub agents and writes delegations is never shown,only prompts and tool schemas
+wrote both the loop and the log myself,only then the log fills up`,
   'state-rendering': `page says the research progress panel updates while the agent works
 but the panel reads status draft completed total from an agent called researcher
-the agent on the page only writes notes and preferences,and researcher is never registered
-so nothing the agent does can move the panel
-runner function isnt shown either`,
+the typescript agent on the page only writes notes thru set_notes,and researcher is never registered
+so the agent answers in chat but the panel stays idle 0 of ? complete
+runagenticloop isnt shown either`,
   'state-streaming': `page says the document streams into the view while the agent writes it
 but it only shows one branch that runs inside the streamed tool argument handler
-the handler,the route and the write_document tool executor are never shown
+the handler,the route and the write_document tool are never shown
 plus a second helper emitstreamingdocumentstate doing the same thing,no word which one to use
-had to build the handler myself`,
+had to build the handler myself,then it streams`,
   'agent-config': `page says the agent reads tone and expertise config and folds it into the prompt
 but theres no react native frontend code at all for setting the config
 and it names three ways to send it,shared state,forwarded props,useagentcontext
@@ -64,8 +63,8 @@ export const FINDING_EVIDENCE: Record<string, DocEvidence[]> = {
   quickstart: [
     { text: 'model: "openai:gpt-6-luna",', caption: 'Only a built-in OpenAI agent; no Claude agent (FINDINGS.md #1)' },
   ],
-  'tool-rendering': [
-    { text: 'model: normalizeClaudeAgentSdkModel(model),', caption: 'Adapter helpers never defined' },
+  'multimodal-attachments': [
+    { text: 'type a question, and tap Send.', caption: 'Send does nothing, prompt stays in the input (FINDINGS.md #22)' },
   ],
   'shared-state': [
     { text: 'await runAgenticLoop(req, res, {', caption: 'runAgenticLoop / runWithClaudeAgentSdk never shown (FINDINGS.md #9)' },

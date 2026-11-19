@@ -7,7 +7,7 @@
   },
   {
    "at": "evidence",
-   "text": "So this is the problem, it says config comes from shared state, umm, but the code reads something else and there's no React Native code."
+   "text": "So this is the problem, umm, it says config comes from shared state, but there's no React Native code for setting it."
   },
   {
    "at": "ide",
@@ -19,15 +19,15 @@
   },
   {
    "at": "demo",
-   "text": "Moving on to the demo. The answer comes back fine, but umm, the tone chips are only there because I wrote that panel myself."
+   "text": "Moving on to the demo. The tone change does apply, but only with the panel and the config reader I had to guess."
   },
   {
    "at": "notepad",
-   "text": "So basically, there's no frontend for the config, and the page names three different ways to send it, so you have to guess."
+   "text": "So basically, there's no frontend for the config, and the page names three different ways to send it, so you have to guess both sides."
   },
   {
    "at": "+",
-   "text": "Okay, so that's the problem, please get it fixed."
+   "text": "Alright, that's the issue, kindly sort it out."
   }
  ]
 }
