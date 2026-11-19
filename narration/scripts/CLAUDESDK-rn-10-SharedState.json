@@ -1,0 +1,33 @@
+{
+ "clip": "CLAUDESDKTS-rn-10-SharedState",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the shared state page for Claude Agent SDK TypeScript on React Native, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, the server calls this run shared state function, but umm, the page never shows it."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "+",
+   "text": "This part wasn't on the page, I had to add it myself, the whole agent loop."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. The notes card should update from the agent, and it only works on the loop I wrote."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the agent is three fragments of a loop that's never shown, with undefined helpers and no install, so you can't run it as written."
+  },
+  {
+   "at": "+",
+   "text": "That's it for this one, kindly look into this issue."
+  }
+ ]
+}

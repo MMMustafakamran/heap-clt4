@@ -1,0 +1,33 @@
+{
+ "clip": "CLAUDESDKTS-rn-23-AgentConfig",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the agent config page for Claude Agent SDK TypeScript on React Native, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, it says config comes from shared state, umm, but the code reads something else and there's no React Native code."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "+",
+   "text": "This part wasn't on the page, I had to add it myself, the config panel."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. The answer comes back fine, but umm, the tone chips are only there because I wrote that panel myself."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, there's no frontend for the config, and the page names three different ways to send it, so you have to guess."
+  },
+  {
+   "at": "+",
+   "text": "Okay, so that's the problem, please get it fixed."
+  }
+ ]
+}

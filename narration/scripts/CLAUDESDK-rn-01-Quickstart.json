@@ -1,0 +1,29 @@
+{
+ "clip": "CLAUDESDKTS-rn-01-Quickstart",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the React Native quickstart for Claude Agent SDK TypeScript, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, umm, the runtime only registers a built-in OpenAI agent, there's no Claude agent anywhere on the page."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. The chat does reply, but uh, it's the OpenAI agent answering, not Claude."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, this should give you a chat on a Claude agent, but you get OpenAI, and the page never shows the Claude backend or how to connect it."
+  },
+  {
+   "at": "+",
+   "text": "So kindly look into it."
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "clip": "CLAUDESDKTS-rn-09-ToolCallRendering",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the tool call rendering page for Claude Agent SDK TypeScript, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, uh, the agent is just two pieces of an adapter, and helpers like this normalize model function are never defined."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "+",
+   "text": "This part wasn't on the page, I had to add it myself, basically all the missing imports and helpers."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. I asked for the weather, it should show a weather card, but even with my added code, uh, the answer just comes back as plain text."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the agent should render a weather card, but as published the file doesn't even import, because half the adapter is missing."
+  },
+  {
+   "at": "+",
+   "text": "So this needs a fix, kindly check it."
+  }
+ ]
+}

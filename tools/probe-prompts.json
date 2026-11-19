@@ -1,0 +1,22 @@
+{
+  "quickstart": {"prompt": "Say hello in one sentence", "tap": "Send"},
+  "prebuilt-components": {"prompt": "Say hello in one sentence", "tap": "Send"},
+  "markdown": {"prompt": "Reply with a bold word, a bullet list and a code block", "tap": "Send"},
+  "headless-ui": {"prompt": "What can you do?", "tap": "Send"},
+  "multimodal-attachments": {"prompt": "What can you help me with?", "tap": "Send", "hideKeyboardBeforeSend": true},
+  "frontend-tools": {"prompt": "Show only the tasks that are done", "tap": "Send"},
+  "tool-based": {"prompt": "Show me a bar chart of quarterly sales: Q1 10, Q2 15, Q3 8, Q4 20", "tap": "Send", "then": [{"hideKeyboard": true}, {"swipe": [540, 900, 540, 1800]}, {"wait": 3}]},
+  "tool-rendering": {"prompt": "What's the weather in San Francisco?", "tap": "Send"},
+  "state-rendering": {"prompt": "Write a short report on solar power", "tap": "Send"},
+  "shared-state": {"prompt": "Remember that I like tea", "tap": "Send"},
+  "shared-state-rendering": {"steps": [{"tap": "ASK THE ASSISTANT"}, {"wait": 20}], "before": [{"waitfor": "ASK THE ASSISTANT", "timeout": 60}, {"tap": "ASK THE ASSISTANT"}, {"wait": 4}, {"dragUp": "Chat"}, {"wait": 2}], "prompt": "Mark Build a prototype as done", "input": "last", "then": [{"hideKeyboard": true}, {"wait": 5}]},
+  "agent-readonly": {"prompt": "What is my name?", "tap": "Send", "input": "last"},
+  "state-streaming": {"prompt": "Write a short document about the ocean", "tap": "Send"},
+  "agent-config": {"prompt": "Explain what an API is", "tap": "Send", "steps": [{"tap": "ENTHUSIASTIC"}, {"send": "Explain what an API is"}, {"wait": 10}]},
+  "hitl": {"prompt": "Book a 30 minute meeting with Alice and Bob about the Q3 roadmap", "tap": "Send", "steps": [{"tap": "re:(\\d{1,2}(:\\d\\d)? ?(am|pm)|\\d{1,2}:\\d\\d)"}, {"wait": 20}]},
+  "use-interrupt": {"prompt": "Book a call with Alice about onboarding", "tap": "Send", "steps": [{"tap": "re:(\\d{1,2}(:\\d\\d)? ?(am|pm)|\\d{1,2}:\\d\\d)"}, {"wait": 20}]},
+  "hitl-headless": {"prompt": "Book a meeting about the Q3 roadmap", "tap": "Send", "steps": [{"tap": "TUE 3 PM"}, {"wait": 20}]},
+  "governed-actions": {"prompt": "Send an email to bob@example.com saying the launch moved to Friday", "tap": "Send", "steps": [{"tap": "re:^(approve|allow|yes|confirm)"}, {"wait": 20}]},
+  "subagents": {"prompt": "Research electric cars and write a short summary", "tap": "Send"},
+  "programmatic-control": {"steps": [{"tap": "RUN AGENT"}, {"wait": 20}], "noInput": true, "tap": "RUN AGENT", "then": [{"wait": 20}], "before": [{"waitfor": "RUN AGENT", "timeout": 60}]}
+}

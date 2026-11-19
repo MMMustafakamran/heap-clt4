@@ -1,0 +1,748 @@
+{
+  "framework": "Claude Agent SDK (TypeScript)",
+  "ui": "react-native",
+  "repo": "heap-clt4",
+  "docBase": "https://docs.copilotkit.ai/react-native/claude-sdk-typescript/",
+  "versions": {
+    "@copilotkit/react-native": "1.89.0",
+    "@copilotkit/runtime": "1.89.0",
+    "react-native": "0.88.1",
+    "zod": "3.25.76",
+    "@ag-ui/claude-agent-sdk": "0.0.9",
+    "@anthropic-ai/claude-agent-sdk": "0.3.306"
+  },
+  "testedContext": {
+    "os": "Microsoft Windows 11 Pro",
+    "packageManager": "npm 11 (Node 26.7.0)",
+    "device": "Android emulator, API 36 x86_64 (Pixel 7)"
+  },
+  "report": {
+    "style": "status",
+    "h1": "Claude Agent SDK (TypeScript)",
+    "title": "Claude Agent SDK TypeScript (React Native) status",
+    "quickstartHeading": "Quickstart",
+    "quickstartHeader": [
+      "Frontend",
+      "Quickstart"
+    ],
+    "clipsToUpload": true,
+    "columns": [
+      "Page/Section",
+      "Results"
+    ],
+    "resultColumn": 1,
+    "guidesHeading": "Guides (React Native)"
+  },
+  "sections": [
+    {
+      "label": "Basics",
+      "cells": [
+        "Section"
+      ]
+    },
+    {
+      "label": "Chat",
+      "cells": [
+        "Sub section"
+      ]
+    },
+    {
+      "label": "Custom Look and Feel",
+      "cells": [
+        "Sub section"
+      ]
+    },
+    {
+      "label": "Generative UI",
+      "cells": [
+        "Section"
+      ]
+    },
+    {
+      "label": "Controlled",
+      "cells": [
+        "Sub section"
+      ]
+    },
+    {
+      "label": "Shared state",
+      "cells": [
+        "Section"
+      ]
+    },
+    {
+      "label": "Human-in-the-loop",
+      "cells": [
+        "Section"
+      ]
+    },
+    {
+      "label": "Debugging",
+      "cells": [
+        "Section"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "id": "quickstart",
+      "label": "React Native",
+      "kind": "quickstart",
+      "group": null,
+      "child": false,
+      "docPath": "",
+      "reachable": "sidebar",
+      "status": "❌",
+      "findings": [
+        1,
+        2
+      ],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [
+        "Issue: no Claude agent, only a built-in OpenAI one."
+      ],
+      "links": [
+        {
+          "text": "Issue",
+          "clip": "CLAUDESDKTS-rn-01-Quickstart",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "prebuilt-components",
+      "label": "Prebuilt Components",
+      "kind": "guide",
+      "group": "Chat",
+      "child": true,
+      "docPath": "prebuilt-components",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [
+        3,
+        4
+      ],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-02-PrebuiltComponents",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "markdown",
+      "label": "Markdown Rendering",
+      "kind": "guide",
+      "group": "Custom Look and Feel",
+      "child": true,
+      "docPath": "custom-look-and-feel/markdown",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [
+        3,
+        4
+      ],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-03-MarkdownRendering",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "headless-ui",
+      "label": "Headless UI",
+      "kind": "guide",
+      "group": "Custom Look and Feel",
+      "child": true,
+      "docPath": "custom-look-and-feel/headless-ui",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-04-HeadlessUi",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "multimodal-attachments",
+      "label": "Multimodal Attachments",
+      "kind": "guide",
+      "group": "Chat",
+      "child": true,
+      "docPath": "multimodal-attachments",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [],
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [],
+      "block": null
+    },
+    {
+      "id": "frontend-tools",
+      "label": "Frontend Tools",
+      "kind": "guide",
+      "group": "Basics",
+      "child": false,
+      "docPath": "frontend-tools",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [
+        3
+      ],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-06-FrontendTools",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "generative-ui",
+      "label": "Overview",
+      "kind": "guide",
+      "group": "Generative UI",
+      "child": false,
+      "docPath": "generative-ui",
+      "reachable": "sidebar",
+      "status": "N/A",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [
+        "Note: overview page, no code to run."
+      ],
+      "links": []
+    },
+    {
+      "id": "tool-based",
+      "label": "Components as Tools",
+      "kind": "guide",
+      "group": "Controlled",
+      "child": true,
+      "docPath": "generative-ui/tool-based",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [
+        3
+      ],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-08-ComponentsAsTools",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "tool-rendering",
+      "label": "Tool Call Rendering",
+      "kind": "guide",
+      "group": "Controlled",
+      "child": true,
+      "docPath": "generative-ui/tool-rendering",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [
+        3
+      ],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": "Issue",
+          "clip": "CLAUDESDKTS-rn-09-ToolCallRendering",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "shared-state",
+      "label": "Shared State",
+      "kind": "guide",
+      "group": "Shared state",
+      "child": false,
+      "docPath": "shared-state",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": "Issue",
+          "clip": "CLAUDESDKTS-rn-10-SharedState",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "shared-state-rendering",
+      "label": "Render agent state in your app",
+      "kind": "guide",
+      "group": "Shared state",
+      "child": true,
+      "docPath": "shared-state/rendering-in-app",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [
+        3
+      ],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": []
+    },
+    {
+      "id": "agent-readonly",
+      "label": "Agent Read-Only Context",
+      "kind": "guide",
+      "group": "Shared state",
+      "child": true,
+      "docPath": "shared-state/agent-readonly",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-12-AgentReadOnlyContext",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "hitl",
+      "label": "HITL Overview",
+      "kind": "guide",
+      "group": "Human-in-the-loop",
+      "child": false,
+      "docPath": "human-in-the-loop",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-13-HitlOverview",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "use-interrupt",
+      "label": "Pausing the Agent for Input",
+      "kind": "guide",
+      "group": "Human-in-the-loop",
+      "child": true,
+      "docPath": "human-in-the-loop/useInterrupt",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-14-PausingTheAgentForInput",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "hitl-headless",
+      "label": "Headless Interrupts",
+      "kind": "guide",
+      "group": "Human-in-the-loop",
+      "child": true,
+      "docPath": "human-in-the-loop/headless",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [
+        13
+      ],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-15-HeadlessInterrupts",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "governed-actions",
+      "label": "Governed Action Approval UI",
+      "kind": "guide",
+      "group": "Human-in-the-loop",
+      "child": true,
+      "docPath": "human-in-the-loop/governed-actions",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-16-GovernedActionApprovalUi",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "webmcp",
+      "label": "WebMCP",
+      "kind": "guide",
+      "group": null,
+      "child": false,
+      "docPath": "webmcp",
+      "reachable": "sidebar",
+      "status": "N/A",
+      "findings": [
+        15
+      ],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [
+        "Note: the page says WebMCP registration is a no-op on React Native."
+      ],
+      "links": []
+    },
+    {
+      "id": "subagents",
+      "label": "Sub-agents",
+      "kind": "guide",
+      "group": null,
+      "child": false,
+      "docPath": "multi-agent/subagents",
+      "reachable": "sidebar",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": "Issue",
+          "clip": "CLAUDESDKTS-rn-18-SubAgents",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "inspector",
+      "label": "Inspector",
+      "kind": "guide",
+      "group": "Debugging",
+      "child": false,
+      "docPath": "inspector",
+      "reachable": "sidebar",
+      "status": "N/A",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [
+        "Note: the page says there is no React Native build of Inspector."
+      ],
+      "links": []
+    },
+    {
+      "id": "state-rendering",
+      "label": "State Rendering",
+      "kind": "guide",
+      "group": "Generative UI",
+      "child": true,
+      "docPath": "generative-ui/state-rendering",
+      "reachable": "sidebar",
+      "linkedFrom": "generative-ui",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": "Issue",
+          "clip": "CLAUDESDKTS-rn-20-StateRendering",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "state-streaming",
+      "label": "State Streaming",
+      "kind": "guide",
+      "group": "Shared state",
+      "child": true,
+      "docPath": "shared-state/streaming",
+      "reachable": "sidebar",
+      "linkedFrom": "shared-state, shared-state/rendering-in-app, shared-state/agent-readonly, multi-agent/subagents",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": "Issue",
+          "clip": "CLAUDESDKTS-rn-21-StateStreaming",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "programmatic-control",
+      "label": "Programmatic Control",
+      "kind": "guide",
+      "group": null,
+      "child": false,
+      "docPath": "programmatic-control",
+      "reachable": "in-content",
+      "linkedFrom": "custom-look-and-feel/headless-ui, shared-state",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": null,
+          "clip": "CLAUDESDKTS-rn-22-ProgrammaticControl",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    },
+    {
+      "id": "agent-config",
+      "label": "Agent Config",
+      "kind": "guide",
+      "group": null,
+      "child": false,
+      "docPath": "agent-config",
+      "reachable": "in-content",
+      "linkedFrom": "inspector",
+      "status": "",
+      "findings": [],
+      "block": null,
+      "review": {
+        "verdict": null,
+        "approvedAt": null,
+        "by": null
+      },
+      "added": "2026-11-20",
+      "probe": null,
+      "notes": [],
+      "links": [
+        {
+          "text": "Issue",
+          "clip": "CLAUDESDKTS-rn-23-AgentConfig",
+          "loom": null,
+          "narration": null,
+          "filmed": null
+        }
+      ]
+    }
+  ]
+}
