@@ -93,6 +93,13 @@ async function probe(id: string) {
   const cfg = prompts[id] || {};
   const prompt = opt("prompt", cfg.prompt);
   const tapLabel = opt("tap", cfg.tap ?? "Send");
+  // HARNESS: "before" steps (probe-prompts.json) run before the prompt: waitfor / tap / wait / swipe [x1,y1,x2,y2]
+  for (const b of (cfg.before || []) as any[]) {
+    if (b.waitfor) { const end = Date.now() + (b.timeout ?? 60) * 1000; while (Date.now() < end && !findLabel(dump().nodes, b.waitfor)) await sleep(2000); }
+    if (b.tap) { const n = findLabel(dump().nodes, b.tap); if (n) { tap(n); step(`before: tapped "${n.text || n.desc}"`); } else step(`before: no "${b.tap}"`); }
+    if (b.swipe) { const [x1, y1, x2, y2] = b.swipe; sh(`input swipe ${x1} ${y1} ${x2} ${y2} 500`); step("before: swipe"); }
+    if (b.wait) await sleep(b.wait * 1000);
+  }
   let before = dump();
   // first open of a page builds its bundle and renders slowly: wait up to 45 s for the input
   for (let i = 0; prompt && !flag("no-input") && i < 13 && !before.nodes.some((n) => n.cls.endsWith("EditText")); i++) {
